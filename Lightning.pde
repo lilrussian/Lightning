@@ -10,7 +10,7 @@ PImage brokenScreen;
 
 
 void setup() {
- size(400,800);
+ size(400,600);
  strokeWeight(5);
  background(255,255,255);
  bkg = loadImage("phone.png");
