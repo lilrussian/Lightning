@@ -13,8 +13,10 @@ void setup() {
  size(400,800);
  strokeWeight(5);
  background(0,0,0);
- bkg = loadImage(url, "https://raw.githubusercontent.com/lilrussian/Lightning/master/phone.png");
- brokenScreen = loadImage(url, "https://raw.githubusercontent.com/lilrussian/Lightning/master/brokenScreen.jpg");
+ String url = "https://raw.githubusercontent.com/lilrussian/Lightning/master/phone.png";
+ String url1 = "https://raw.githubusercontent.com/lilrussian/Lightning/master/brokenScreen.jpg";
+ bkg = loadImage(url, "png");
+ brokenScreen = loadImage(url1, "jpg");
  image(bkg,0,0,400,800);
  image(brokenScreen,25,142,353,528);
  
