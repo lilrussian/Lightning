@@ -13,10 +13,10 @@ void setup() {
  size(400,800);
  strokeWeight(5);
  background(0,0,0);
- //String url = "https://raw.githubusercontent.com/lilrussian/Lightning/master/phone.png";
- //String url1 = "https://raw.githubusercontent.com/lilrussian/Lightning/master/brokenScreen.jpg";
- bkg = loadImage("/images/phone.png");
- brokenScreen = loadImage("/images/brokenScreen.jpg");
+ String url = "https://i.imgur.com/RKqWoCr.png";
+ String url1 = "https://i.imgur.com/7TYHpLX.jpg";
+ bkg = loadImage(url, "png");
+ brokenScreen = loadImage(url1, "jpg");
  image(bkg,0,0,400,800);
  image(brokenScreen,25,142,353,528);
  
@@ -25,8 +25,7 @@ void setup() {
 void draw(){
 
   stroke(255,255,255);
- image(bkg,0,0,400,800);
- image(brokenScreen,25,142,353,528);
+
  while((endX < 658) && (startY>30)&&(startY<370))
 {
   
