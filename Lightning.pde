@@ -13,8 +13,8 @@ void setup() {
  size(400,800);
  strokeWeight(5);
  background(0,0,0);
- bkg = loadImage("phone.png");
- brokenScreen = loadImage("brokenScreen.jpg");
+ bkg = loadImage(url, "https://raw.githubusercontent.com/lilrussian/Lightning/master/phone.png");
+ brokenScreen = loadImage(url, "https://raw.githubusercontent.com/lilrussian/Lightning/master/brokenScreen.jpg");
  image(bkg,0,0,400,800);
  image(brokenScreen,25,142,353,528);
  
