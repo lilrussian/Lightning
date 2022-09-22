@@ -13,10 +13,10 @@ void setup() {
  size(400,800);
  strokeWeight(5);
  background(0,0,0);
- String url = "https://i.imgur.com/RKqWoCr.png";
- String url1 = "https://i.imgur.com/7TYHpLX.jpg";
- bkg = loadImage(url, "png");
- brokenScreen = loadImage(url1, "jpg");
+ //String url = "https://i.imgur.com/RKqWoCr.png";
+ //String url1 = "https://i.imgur.com/7TYHpLX.jpg";
+ bkg = loadImage("images/phone.png");
+ brokenScreen = loadImage("images/brokenScreen.jpg");
  image(bkg,0,0,400,800);
  image(brokenScreen,25,142,353,528);
  
