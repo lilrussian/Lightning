@@ -1,4 +1,3 @@
-//make a game where u crack the phone screen 
 int startX = 150;
 int startY = (int)(Math.random()*500);
 int endX = 0;
@@ -10,21 +9,25 @@ PImage brokenScreen;
 
 
 void setup() {
+  frameRate(60);
  size(400,800);
  strokeWeight(5);
  background(0,0,0);
- //String url = "https://i.imgur.com/RKqWoCr.png";
- //String url1 = "https://i.imgur.com/7TYHpLX.jpg";
- bkg = loadImage("images/phone.png");
- brokenScreen = loadImage("images/brokenScreen.jpg");
+ String url = "https://i.imgur.com/RKqWoCr.png";
+ String url1 = "https://i.imgur.com/7TYHpLX.jpg";
+ bkg = loadImage(url, "png");
+ brokenScreen = loadImage(url1, "jpg");
  image(bkg,0,0,400,800);
  image(brokenScreen,25,142,353,528);
  
 }
 
 void draw(){
+    
+
  image(bkg,0,0,400,800);
  image(brokenScreen,25,142,353,528);
+ noLoop();
   stroke(255,255,255);
 
  while((endX < 658) && (startY>30)&&(startY<370))
@@ -36,10 +39,13 @@ void draw(){
   line(startY, startX, endY, endX);
   startX = endX;
   startY = endY;
+  
+  
   }
 }
 
 void mousePressed(){
+  loop();
  crack++;
  startX = 150;
  startY = (int)(Math.random()*400);
@@ -49,5 +55,6 @@ void mousePressed(){
      System.out.println("RESET");
     image(brokenScreen,25,142,353,528);
  }
+ 
  
 }
