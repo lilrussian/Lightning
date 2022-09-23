@@ -25,8 +25,8 @@ void setup() {
 void draw(){
     
 
- image(bkg,0,0,400,800);
- image(brokenScreen,25,142,353,528);
+ //image(bkg,0,0,400,800);
+ //image(brokenScreen,25,142,353,528);
  noLoop();
   stroke(255,255,255);
 
