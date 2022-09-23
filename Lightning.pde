@@ -23,7 +23,8 @@ void setup() {
 }
 
 void draw(){
-
+ image(bkg,0,0,400,800);
+ image(brokenScreen,25,142,353,528);
   stroke(255,255,255);
 
  while((endX < 658) && (startY>30)&&(startY<370))
